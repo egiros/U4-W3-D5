@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="Content/bootstrap.min.css" />
     <style>
 
-        body{
-            background-color: whitesmoke;
-        }
-
          .card {
         transition: transform 0.2s;
          }
@@ -29,7 +25,7 @@
 
     </style>
 </head>
-<body>
+<body class="bg-light">
     <form id="form1" runat="server">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -60,7 +56,7 @@
                 <% foreach (var prodotto in Prodotti) { %>
                     <div class="col-md-4">
                         <div class="card shadow mb-2">
-                            <img src="<%= prodotto.Immagine %>" alt="<%= prodotto.Nome %>" class="card-img-top immagine-prodotto" />
+                            <img src="<%= prodotto.Immagine %>" alt="<%= prodotto.Nome %>" class="card-img-top immagine-prodotto"/>
                             <div class="card-body">
                                 <h5 class="card-title"><%= prodotto.Nome %></h5>
                                 <p class="card-text"><strong>Prezzo:</strong> <%= string.Format("{0:C}", prodotto.Prezzo) %></p>

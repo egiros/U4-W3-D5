@@ -42,15 +42,6 @@ namespace U4_W3_D5
         protected global::System.Web.UI.WebControls.Repeater rptCarrello;
 
         /// <summary>
-        /// Controllo btnSvuotaCarrello.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSvuotaCarrello;
-
-        /// <summary>
         /// Controllo btnTornaIndietro.
         /// </summary>
         /// <remarks>
@@ -58,5 +49,14 @@ namespace U4_W3_D5
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnTornaIndietro;
+
+        /// <summary>
+        /// Controllo btnSvuotaCarrello.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSvuotaCarrello;
     }
 }

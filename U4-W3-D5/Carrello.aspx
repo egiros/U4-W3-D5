@@ -8,10 +8,6 @@
     <title>Carrello</title>
      <link rel="stylesheet" href="Content/bootstrap.min.css" />
     <style>
-        body {
-            background-color: whitesmoke;
-        }
-
         .card {
             transition: transform 0.2s;
         }
@@ -30,11 +26,14 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-light">
    <form id="form1" runat="server">
         <div class="container mt-5">
             <h1 class="text-center fw-bold mb-5">EPISTORE - Carrello</h1>
-            <asp:Label ID="lblMessaggio" runat="server" CssClass="text-success display-6" Visible="false"></asp:Label>
+            <div class="d-flex align-items-center justify-content-center my-3">
+                <asp:Label ID="lblMessaggio" runat="server" CssClass="alert alert-success fs-5" Visible="false"></asp:Label>
+            </div>
+            
             <div class="row carrello-container">
                 <asp:Repeater ID="rptCarrello" runat="server">
                     <ItemTemplate>
@@ -51,14 +50,20 @@
                 </asp:Repeater>
             </div>
             <div class="row mt-4">
-                <div class="col-md-6">
-                    <asp:Button ID="btnSvuotaCarrello" runat="server" Text="Svuota Carrello" OnClick="btnSvuotaCarrello_Click" CssClass="btn btn-danger" />
+                <div class="col-md-6 text-center">
+                    <asp:Button ID="btnTornaIndietro" runat="server" Text="Torna Indietro" OnClick="btnTornaIndietro_Click" CssClass="btn btn-dark" />
                 </div>
-                <div class="col-md-6 text-right">
-                    <asp:Button ID="btnTornaIndietro" runat="server" Text="Torna Indietro" OnClick="btnTornaIndietro_Click" CssClass="btn btn-secondary" />
+                <div class="col-md-6 text-center">
+                    <asp:Button ID="btnSvuotaCarrello" runat="server" Text="Svuota Carrello" OnClick="btnSvuotaCarrello_Click" CssClass="btn btn-danger" />
                 </div>
             </div>
         </div>
     </form>
+    <div class="container mt-5">
+        <footer class="text-center">
+            <hr class="my-4">
+            <p>&copy; 2024 EPISTORE. Tutti i diritti riservati.</p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -39,8 +39,8 @@ namespace U4_W3_D5
             CaricaCarrello();
             AggiungiMessaggio("Carrello svuotato con successo!");
 
-            // Script per eseguire un redirect dopo 1 secondi
-            ScriptManager.RegisterStartupScript(this, GetType(), "redirectScript", "setTimeout(function() { window.location.href = 'Carrello.aspx'; }, 1000);", true);
+            // Script per eseguire un redirect dopo 1,5 secondi
+            ScriptManager.RegisterStartupScript(this, GetType(), "redirectScript", "setTimeout(function() { window.location.href = 'Carrello.aspx'; }, 1500);", true);
         }
 
         protected void btnTornaIndietro_Click(object sender, EventArgs e)
